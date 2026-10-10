@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us — ConnectKart</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🛒</text></svg>">
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <div class="container">
+      <a href="../index.html" class="nav-brand">Connect<span>Kart</span> 🛒</a>
+      <div class="nav-links" id="navLinks">
+        <a href="../index.html">Home</a>
+        <a href="products.html">Products</a>
+        <a href="discounts.html">Deals</a>
+        <a href="resale.html">Resale</a>
+        <a href="donations.html">Donate</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <div class="nav-actions">
+        <a href="cart.html" class="cart-btn">🛒 Cart <span class="cart-count" style="display:none">0</span></a>
+        <button class="hamburger" id="hamburger"><span></span><span></span><span></span></button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- PAGE HEADER -->
+  <div class="page-header">
+    <div class="container">
+      <div class="breadcrumb"><a href="../index.html">Home</a><span class="breadcrumb-sep">›</span><span>About</span></div>
+      <h1>About ConnectKart</h1>
+      <p>Building the future of community-driven commerce in India</p>
+    </div>
+  </div>
+
+  <!-- MISSION -->
+  <section class="section">
+    <div class="container">
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center">
+        <div>
+          <div class="hero-subtitle">🚀 Our Mission</div>
+          <h2>Empowering Every Seller, Supporting Every Buyer</h2>
+          <p style="margin:16px 0;font-size:1.05rem">ConnectKart was built with a simple vision: create one seamless marketplace where customers can buy anything — from a plate of hot biryani to a refurbished laptop — from local restaurants, small shops, individual sellers, and even donate to communities in need.</p>
+          <p>We believe local businesses deserve the same digital infrastructure as large corporations, and that every community has potential for circular commerce through resale and donation.</p>
+        </div>
+        <div class="grid-2" style="gap:16px">
+          <div class="feature-card" style="text-align:center">
+            <div style="font-size:2.5rem;margin-bottom:8px">🍕</div>
+            <h3>Food & Dining</h3>
+            <p>Supporting 100+ local restaurants and home chefs</p>
+          </div>
+          <div class="feature-card" style="text-align:center">
+            <div style="font-size:2.5rem;margin-bottom:8px">🛒</div>
+            <h3>Multi-Category Shop</h3>
+            <p>Groceries, electronics, fitness, home décor and more</p>
+          </div>
+          <div class="feature-card" style="text-align:center">
+            <div style="font-size:2.5rem;margin-bottom:8px">♻️</div>
+            <h3>Resale Marketplace</h3>
+            <p>Circular economy — buy, sell, reuse</p>
+          </div>
+          <div class="feature-card" style="text-align:center">
+            <div style="font-size:2.5rem;margin-bottom:8px">🤝</div>
+            <h3>Community Impact</h3>
+            <p>Donation platform for food, goods, and money</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- STATS -->
+  <section class="section-sm" style="background:var(--primary)">
+    <div class="container">
+      <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:24px;text-align:center">
+        <div><div style="font-size:2.5rem;font-weight:800;color:#fff">10K+</div><div style="color:rgba(255,255,255,.8)">Products Listed</div></div>
+        <div><div style="font-size:2.5rem;font-weight:800;color:#fff">500+</div><div style="color:rgba(255,255,255,.8)">Verified Sellers</div></div>
+        <div><div style="font-size:2.5rem;font-weight:800;color:#fff">50K+</div><div style="color:rgba(255,255,255,.8)">Happy Customers</div></div>
+        <div><div style="font-size:2.5rem;font-weight:800;color:#fff">₹1Cr+</div><div style="color:rgba(255,255,255,.8)">GMV Target (Year 1)</div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- BUSINESS MODEL -->
+  <section class="section">
+    <div class="container">
+      <div class="section-title"><h2>Business Model & Revenue</h2><p>Transparent commissions that make the platform sustainable</p></div>
+      <div class="grid-3">
+        <div class="feature-card">
+          <div class="feature-icon">🍕</div>
+          <h3>Restaurant Commission</h3>
+          <p>ConnectKart earns <strong>20% commission</strong> on every food order placed through the platform, paid by the restaurant partner.</p>
+          <span class="badge badge-orange" style="margin-top:12px">Food Category</span>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">🛒</div>
+          <h3>Shop Commission</h3>
+          <p>Grocery stores and general shops pay <strong>12% commission</strong>. Electronics sellers pay <strong>8%</strong> on each successful sale.</p>
+          <span class="badge badge-blue" style="margin-top:12px">Shop Category</span>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">⚙️</div>
+          <h3>Platform Fee</h3>
+          <p>A <strong>3% platform/service fee</strong> (min ₹5, max ₹50) is charged to customers on each order to cover platform infrastructure costs.</p>
+          <span class="badge badge-purple" style="margin-top:12px">All Categories</span>
+        </div>
+      </div>
+      <div class="alert alert-info" style="max-width:700px;margin:24px auto 0;text-align:center">
+        💡 All commission and fee rates are configurable via <code>data/delivery.json</code> — no code changes required to adjust the business model.
+      </div>
+    </div>
+  </section>
+
+  <!-- TECH STACK & ROADMAP -->
+  <section class="section" style="background:var(--surface)">
+    <div class="container">
+      <div class="section-title"><h2>Platform Roadmap</h2><p>Current state and upcoming production features</p></div>
+      <div class="grid-2">
+        <div>
+          <h3 style="margin-bottom:16px;color:var(--accent)">✅ Current (Frontend Prototype)</h3>
+          <ul style="list-style:disc;padding-left:20px;color:var(--text-muted);line-height:2">
+            <li>Responsive multi-page web application</li>
+            <li>Product browsing, search, and category filtering</li>
+            <li>Add to cart, quantity management, coupon codes</li>
+            <li>Configurable delivery charges and platform fee</li>
+            <li>Frontend checkout with payment method selection</li>
+            <li>Resale marketplace with seller listings</li>
+            <li>Donation platform (food, products, money)</li>
+            <li>Order confirmation with order ID generation</li>
+            <li>LocalStorage-based cart and order persistence</li>
+          </ul>
+        </div>
+        <div>
+          <h3 style="margin-bottom:16px;color:var(--secondary)">🔮 Upcoming (Production Phase)</h3>
+          <ul style="list-style:disc;padding-left:20px;color:var(--text-muted);line-height:2">
+            <li>Secure backend API (Node.js / Django)</li>
+            <li>Database integration (PostgreSQL / MongoDB)</li>
+            <li>User authentication and profiles</li>
+            <li>Real payment gateway (Razorpay / PayU)</li>
+            <li>Seller dashboard and admin panel</li>
+            <li>Live order tracking with delivery partner API</li>
+            <li>AI-powered recommendations (IBM watsonx Studio)</li>
+            <li>Push notifications and email alerts</li>
+            <li>Verified NGO donation with receipt generation</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TEAM PLACEHOLDER -->
+  <section class="section">
+    <div class="container">
+      <div class="section-title"><h2>Our Team</h2><p>The people building the future of local commerce</p></div>
+      <div class="grid-4">
+        <div class="feature-card text-center">
+          <div style="width:70px;height:70px;background:var(--primary);border-radius:50%;margin:0 auto 12px;display:flex;align-items:center;justify-content:center;font-size:1.8rem;color:#fff">👤</div>
+          <h3>Founder & CEO</h3>
+          <p class="text-sm">Vision, strategy and business development</p>
+        </div>
+        <div class="feature-card text-center">
+          <div style="width:70px;height:70px;background:var(--secondary);border-radius:50%;margin:0 auto 12px;display:flex;align-items:center;justify-content:center;font-size:1.8rem;color:#fff">👤</div>
+          <h3>CTO</h3>
+          <p class="text-sm">Platform architecture and engineering lead</p>
+        </div>
+        <div class="feature-card text-center">
+          <div style="width:70px;height:70px;background:var(--accent);border-radius:50%;margin:0 auto 12px;display:flex;align-items:center;justify-content:center;font-size:1.8rem;color:#fff">👤</div>
+          <h3>Head of Design</h3>
+          <p class="text-sm">UI/UX, brand identity and product design</p>
+        </div>
+        <div class="feature-card text-center">
+          <div style="width:70px;height:70px;background:var(--purple);border-radius:50%;margin:0 auto 12px;display:flex;align-items:center;justify-content:center;font-size:1.8rem;color:#fff">👤</div>
+          <h3>Head of Growth</h3>
+          <p class="text-sm">Seller partnerships and community outreach</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- JOIN US -->
+  <section class="section-sm" style="background:var(--surface)">
+    <div class="container">
+      <div class="donation-banner" style="background:linear-gradient(135deg,#1E293B,#334155)">
+        <h2>Join ConnectKart as a Seller or Partner</h2>
+        <p>Are you a restaurant owner, small business, or NGO looking to join our platform? We'd love to hear from you.</p>
+        <div class="flex gap-2" style="justify-content:center;flex-wrap:wrap;margin-top:16px">
+          <a href="contact.html" class="btn btn-primary btn-lg">📩 Partner With Us</a>
+          <a href="contact.html" class="btn btn-lg" style="background:rgba(255,255,255,.15);color:#fff;border:1px solid rgba(255,255,255,.3)">📞 Schedule a Call</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <h3>ConnectKart 🛒</h3>
+          <p>A modern marketplace connecting customers, restaurants, shops, sellers, and donors.</p>
+          <div class="footer-social" style="margin-top:16px">
+            <a href="#">📘</a><a href="#">🐦</a><a href="#">📸</a><a href="#">💼</a>
+          </div>
+        </div>
+        <div class="footer-col"><h4>Shop</h4><ul>
+          <li><a href="products.html">All Products</a></li>
+          <li><a href="discounts.html">Deals</a></li>
+          <li><a href="resale.html">Resale</a></li>
+        </ul></div>
+        <div class="footer-col"><h4>Company</h4><ul>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="donations.html">Donate</a></li>
+        </ul></div>
+        <div class="footer-col"><h4>Legal</h4><ul>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Terms of Service</a></li>
+        </ul></div>
+      </div>
+      <div class="footer-bottom"><span>© 2025 ConnectKart. All rights reserved.</span></div>
+    </div>
+  </footer>
+
+  <script src="../js/data.js"></script>
+  <script src="../js/script.js"></script>
+</body>
+</html>

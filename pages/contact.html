@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us — ConnectKart</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🛒</text></svg>">
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <div class="container">
+      <a href="../index.html" class="nav-brand">Connect<span>Kart</span> 🛒</a>
+      <div class="nav-links" id="navLinks">
+        <a href="../index.html">Home</a>
+        <a href="products.html">Products</a>
+        <a href="discounts.html">Deals</a>
+        <a href="resale.html">Resale</a>
+        <a href="donations.html">Donate</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <div class="nav-actions">
+        <a href="cart.html" class="cart-btn">🛒 Cart <span class="cart-count" style="display:none">0</span></a>
+        <button class="hamburger" id="hamburger"><span></span><span></span><span></span></button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- PAGE HEADER -->
+  <div class="page-header">
+    <div class="container">
+      <div class="breadcrumb"><a href="../index.html">Home</a><span class="breadcrumb-sep">›</span><span>Contact</span></div>
+      <h1>📩 Contact Us</h1>
+      <p>We'd love to hear from you — reach out for support, partnerships, or general enquiries</p>
+    </div>
+  </div>
+
+  <!-- CONTACT GRID -->
+  <section class="section">
+    <div class="container">
+      <div style="display:grid;grid-template-columns:1fr 1.4fr;gap:48px;align-items:start">
+
+        <!-- Contact Info -->
+        <div>
+          <h2 style="margin-bottom:16px">Get in Touch</h2>
+          <p style="margin-bottom:28px">Whether you're a customer, seller, restaurant, NGO, or just curious about ConnectKart, we're here to help.</p>
+
+          <div style="display:flex;flex-direction:column;gap:20px">
+            <div style="display:flex;gap:16px;align-items:flex-start">
+              <div style="width:48px;height:48px;background:rgba(255,107,53,.1);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:1.3rem;flex-shrink:0">📧</div>
+              <div>
+                <h4>Email</h4>
+                <p class="text-sm">support@connectkart.in</p>
+                <p class="text-sm">partnerships@connectkart.in</p>
+              </div>
+            </div>
+            <div style="display:flex;gap:16px;align-items:flex-start">
+              <div style="width:48px;height:48px;background:rgba(59,130,246,.1);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:1.3rem;flex-shrink:0">📞</div>
+              <div>
+                <h4>Phone</h4>
+                <p class="text-sm">+91 98XXX XXXXX (Customer Support)</p>
+                <p class="text-sm">Mon–Sat, 9:00 AM – 8:00 PM</p>
+              </div>
+            </div>
+            <div style="display:flex;gap:16px;align-items:flex-start">
+              <div style="width:48px;height:48px;background:rgba(16,185,129,.1);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:1.3rem;flex-shrink:0">📍</div>
+              <div>
+                <h4>Office</h4>
+                <p class="text-sm">ConnectKart Pvt. Ltd.</p>
+                <p class="text-sm">Bengaluru, Karnataka — 560001, India</p>
+              </div>
+            </div>
+            <div style="display:flex;gap:16px;align-items:flex-start">
+              <div style="width:48px;height:48px;background:rgba(139,92,246,.1);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:1.3rem;flex-shrink:0">🌐</div>
+              <div>
+                <h4>Social</h4>
+                <div style="display:flex;gap:12px;margin-top:4px">
+                  <a href="#" style="color:var(--primary);font-weight:600;font-size:.875rem">Facebook</a>
+                  <a href="#" style="color:var(--primary);font-weight:600;font-size:.875rem">Twitter</a>
+                  <a href="#" style="color:var(--primary);font-weight:600;font-size:.875rem">Instagram</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- FAQs preview -->
+          <div style="margin-top:32px">
+            <h3 style="margin-bottom:14px">Quick FAQs</h3>
+            <details style="border:1px solid var(--border);border-radius:var(--radius-sm);padding:12px;margin-bottom:8px">
+              <summary style="cursor:pointer;font-weight:600;font-size:.875rem">How do I track my order?</summary>
+              <p class="text-sm" style="margin-top:8px">Order tracking will be available in the production version. For now, your order confirmation page shows your order ID and details.</p>
+            </details>
+            <details style="border:1px solid var(--border);border-radius:var(--radius-sm);padding:12px;margin-bottom:8px">
+              <summary style="cursor:pointer;font-weight:600;font-size:.875rem">How do I become a seller on ConnectKart?</summary>
+              <p class="text-sm" style="margin-top:8px">Fill in the contact form with your business details and select "Seller / Restaurant Partnership" as your reason. Our team will reach out within 2 business days.</p>
+            </details>
+            <details style="border:1px solid var(--border);border-radius:var(--radius-sm);padding:12px;margin-bottom:8px">
+              <summary style="cursor:pointer;font-weight:600;font-size:.875rem">Is my payment information secure?</summary>
+              <p class="text-sm" style="margin-top:8px">Yes. In production, all payments are processed by a certified, PCI-DSS compliant payment gateway. ConnectKart never stores card numbers, CVV, or UPI PINs.</p>
+            </details>
+            <details style="border:1px solid var(--border);border-radius:var(--radius-sm);padding:12px">
+              <summary style="cursor:pointer;font-weight:600;font-size:.875rem">How are donations used?</summary>
+              <p class="text-sm" style="margin-top:8px">Donations are coordinated through verified NGO partners (pending regulatory verification for production launch). Full transparency reports will be published quarterly.</p>
+            </details>
+          </div>
+        </div>
+
+        <!-- Contact Form -->
+        <div class="form-section" style="position:sticky;top:80px">
+          <h3 style="margin-bottom:4px">Send Us a Message</h3>
+          <p class="text-sm text-muted" style="margin-bottom:20px">We typically respond within 24 business hours.</p>
+          <form id="contactForm" novalidate>
+            <div class="form-row">
+              <div class="form-group">
+                <label class="form-label" for="contactName">Full Name <span style="color:var(--danger)">*</span></label>
+                <input class="form-control" id="contactName" type="text" placeholder="Your full name" required>
+                <span class="form-error"></span>
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="contactPhone">Phone Number <span style="color:var(--danger)">*</span></label>
+                <input class="form-control" id="contactPhone" type="tel" placeholder="10-digit number" required>
+                <span class="form-error"></span>
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="contactEmail">Email Address <span style="color:var(--danger)">*</span></label>
+              <input class="form-control" id="contactEmail" type="email" placeholder="your@email.com" required>
+              <span class="form-error"></span>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="contactReason">Reason for Contact <span style="color:var(--danger)">*</span></label>
+              <select class="form-control" id="contactReason" required>
+                <option value="">Select a reason</option>
+                <option>Order Support / Tracking</option>
+                <option>Product / Seller Complaint</option>
+                <option>Seller / Restaurant Partnership</option>
+                <option>NGO / Donation Partnership</option>
+                <option>Resale Listing Help</option>
+                <option>Refund / Cancellation</option>
+                <option>Technical Issue</option>
+                <option>General Enquiry</option>
+              </select>
+              <span class="form-error"></span>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="contactSubject">Subject <span style="color:var(--danger)">*</span></label>
+              <input class="form-control" id="contactSubject" type="text" placeholder="Brief subject of your message" required>
+              <span class="form-error"></span>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="contactMessage">Message <span style="color:var(--danger)">*</span></label>
+              <textarea class="form-control" id="contactMessage" rows="5" placeholder="Please describe your issue or enquiry in detail…" required></textarea>
+              <span class="form-error"></span>
+            </div>
+            <div class="security-note" style="margin-bottom:16px">
+              🔒 Your personal information is handled in accordance with our Privacy Policy and will not be shared with third parties.
+            </div>
+            <button type="submit" class="btn btn-primary btn-full">📤 Send Message</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <h3>ConnectKart 🛒</h3>
+          <p>A modern marketplace connecting customers, restaurants, shops, sellers, and donors.</p>
+          <div class="footer-social" style="margin-top:16px">
+            <a href="#">📘</a><a href="#">🐦</a><a href="#">📸</a><a href="#">💼</a>
+          </div>
+        </div>
+        <div class="footer-col"><h4>Shop</h4><ul>
+          <li><a href="products.html">All Products</a></li>
+          <li><a href="discounts.html">Deals</a></li>
+          <li><a href="resale.html">Resale</a></li>
+        </ul></div>
+        <div class="footer-col"><h4>Company</h4><ul>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="donations.html">Donate</a></li>
+        </ul></div>
+        <div class="footer-col"><h4>Legal</h4><ul>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Terms of Service</a></li>
+        </ul></div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2025 ConnectKart. All rights reserved.</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/data.js"></script>
+  <script src="../js/script.js"></script>
+</body>
+</html>
