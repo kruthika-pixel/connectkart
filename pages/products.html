@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Products & Menu — ConnectKart</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🛒</text></svg>">
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <div class="container">
+      <a href="../index.html" class="nav-brand">Connect<span>Kart</span> 🛒</a>
+      <div class="nav-links" id="navLinks">
+        <a href="../index.html">Home</a>
+        <a href="products.html">Products</a>
+        <a href="discounts.html">Deals</a>
+        <a href="resale.html">Resale</a>
+        <a href="donations.html">Donate</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <div class="nav-actions">
+        <a href="cart.html" class="cart-btn">
+          🛒 Cart
+          <span class="cart-count" style="display:none">0</span>
+        </a>
+        <button class="hamburger" id="hamburger"><span></span><span></span><span></span></button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- PAGE HEADER -->
+  <div class="page-header">
+    <div class="container">
+      <div class="breadcrumb">
+        <a href="../index.html">Home</a><span class="breadcrumb-sep">›</span><span>Products</span>
+      </div>
+      <h1>🛍 Products & Menu</h1>
+      <p>Browse food, beverages, groceries, electronics, and more from verified sellers</p>
+    </div>
+  </div>
+
+  <!-- SEARCH + FILTER BAR -->
+  <section class="section-sm" style="background:var(--surface);border-bottom:1px solid var(--border)">
+    <div class="container">
+      <div class="search-bar" style="margin-bottom:20px">
+        <input type="search" id="productSearch" placeholder="Search products, brands, categories…">
+        <button onclick="document.getElementById('productSearch').dispatchEvent(new Event('input'))">🔍 Search</button>
+      </div>
+      <div class="filter-bar">
+        <label class="font-bold text-sm">Filter:</label>
+        <select class="form-control" id="catFilter" style="min-width:150px">
+          <option value="all">All Categories</option>
+          <option value="food">🍕 Food</option>
+          <option value="beverages">☕ Beverages</option>
+          <option value="grocery">🛒 Grocery</option>
+          <option value="electronics">📱 Electronics</option>
+          <option value="fitness">💪 Fitness</option>
+          <option value="home & decor">🏠 Home & Decor</option>
+        </select>
+        <select class="form-control" id="sortFilter" style="min-width:150px">
+          <option value="default">Sort: Default</option>
+          <option value="price-asc">Price: Low to High</option>
+          <option value="price-desc">Price: High to Low</option>
+          <option value="rating">Top Rated</option>
+          <option value="discount">Best Discount</option>
+        </select>
+        <span class="results-count" id="resultsCount">Loading…</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRODUCTS GRID -->
+  <section class="section">
+    <div class="container">
+      <div class="grid-4" id="productsGrid">
+        <div class="spinner" style="grid-column:1/-1"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <h3>ConnectKart 🛒</h3>
+          <p>A modern marketplace connecting customers, restaurants, shops, sellers, and donors.</p>
+        </div>
+        <div class="footer-col"><h4>Quick Links</h4><ul>
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="discounts.html">Deals</a></li>
+          <li><a href="resale.html">Resale</a></li>
+          <li><a href="donations.html">Donate</a></li>
+        </ul></div>
+        <div class="footer-col"><h4>Support</h4><ul>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="#">Help Centre</a></li>
+        </ul></div>
+        <div class="footer-col"><h4>Legal</h4><ul>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Terms of Service</a></li>
+        </ul></div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2025 ConnectKart. All rights reserved.</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/data.js"></script>
+  <script src="../js/script.js"></script>
+</body>
+</html>
